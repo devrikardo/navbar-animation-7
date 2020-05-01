@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px;
+  position: relative;
+}
+.nav-logo {
+  align-self: center;
+  justify-self: start;
+  color: white;
+  cursor: pointer;
+}
+.nav-logo:hover {
+  transform: translateY(-10px);
+}
+.nav-logo img {
+  height: 70px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.btn-grad {
+  align-self: center;
+  justify-self: end;
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.btn-grad:hover {
+  background-position: right center;
+}
